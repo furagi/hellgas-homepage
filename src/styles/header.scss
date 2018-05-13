@@ -1,64 +1,67 @@
-header {
+.header {
   position: fixed;
   width: 100%;
-  background: #fff;
+  background: #000000;
+  line-height: 4em;
+  height: 4em;
   z-index: 20;
   top: 0px;
+  border-bottom: 1px solid #C1872A;;
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 900px) {
+    line-height: 3em;
+    height: 3em;
+  }
+
+  &__container {
+    flex: 1;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
 
   a {
-    color: #2ABDF6;
+    color: #C1872A;
     text-decoration: none;
+    height: 3em;
+
+    @media screen and (max-width: 900px) {
+      height: 2em;
+    }
 
     &:hover {
-      color: #2A98F6;
+      color: #9b6c21;;
     }
   }
 
-  .header-top {
-    width: 100%;
-    height: 4em;
+  &__socials {
+    flex: 1;
     display: flex;
-    align-items: flex-end;
-    border-bottom: 1px solid #000000;
-
-    @media screen and (max-width: 900px) {
-      height: 3em;
-    }
-
-    &__container {
-      width: 60%;
-      margin-left: auto;
-      margin-right: auto;
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 10px;
-      align-items: flex-end;
-      font: normal normal normal 1em futura-lt-w01-light,sans-serif;
-    }
-
-    &__socials {
-      display: flex;
-      flex-direction: row;
-      i {
-        padding: 0 10px;
-      }
-    }
-  }
-
-  .header-bottom {
-    height: 4em;
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: center;
 
-    @media screen and (max-width: 900px) {
-      height: 3em;
+    i {
+      padding: 0 10px;
     }
+  }
 
-    div {
-      text-transform: capitalize;
-      font: normal normal normal 2em didot-w01-italic,serif;
-    }
+  &__empty-block {
+    flex: 1;
+  }
+
+  &__title {
+    flex: 2;
+    text-align: center;
+    text-transform: capitalize;
+    font: normal normal normal 2em didot-w01-italic,serif;
+    color: #C1872A;
   }
 }

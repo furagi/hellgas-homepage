@@ -49,7 +49,7 @@ platformBrowserDynamic().bootstrapModule(AppModule);
     $('.feedback__show-more-container').click(() => {
       $('.feedback__show-more-container').remove();
       $('.feedback__list_folded').removeClass('feedback__list_folded');
-      $('.feedback__image.blur').removeClass('blur');
+      $('.feedback__image').addClass('no-blur');
     });
   });
 })();
