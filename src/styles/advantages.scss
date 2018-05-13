@@ -22,9 +22,11 @@
   }
 
   &__advantage {
-    text-align: center;
+    text-align: left;
     padding-top: 1em;
     padding-bottom: 1em;
+    padding-right: 0.5em;
+    box-sizing: border-box;
     flex: 33%;
     font-size: 1.15em;
 
