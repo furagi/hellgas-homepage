@@ -56,7 +56,7 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 
   const elem = document.querySelector('.brands');
   const msnry = new Masonry(elem, {
-    // options
+    fitWidth: true,
     itemSelector: '.brands__brand',
     columnWidth: 300
   });
