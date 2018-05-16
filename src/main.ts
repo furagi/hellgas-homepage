@@ -1,6 +1,7 @@
 import * as $ from 'jquery';
 import 'slick-carousel';
 import 'lightbox2';
+import * as Masonry from 'masonry-layout';
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
@@ -52,4 +53,12 @@ platformBrowserDynamic().bootstrapModule(AppModule);
       $('.feedback__image').addClass('no-blur');
     });
   });
+
+  const elem = document.querySelector('.brands');
+  const msnry = new Masonry(elem, {
+    // options
+    itemSelector: '.brands__brand',
+    columnWidth: 300
+  });
+
 })();

@@ -1,0 +1,11 @@
+.brands {
+  background: #FFF;
+
+  &__brand {
+    width: 300px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
