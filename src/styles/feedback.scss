@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   padding-top: 60px;
-  background: #000000;
+  background: #FFF;
 
   &__header {
     padding-bottom: 20px;
@@ -50,7 +50,7 @@
     box-sizing: border-box;
 
     padding: 2px;
-    background-color: #000000;
+    background-color: #FFF;
     line-height: 0;
     border-radius: 4px;
     transition: background-color 0.5s ease-out;

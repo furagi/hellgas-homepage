@@ -1,5 +1,6 @@
 .advantages {
   background-color: #F7E8D3;
+  color: #4D4D4D;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,6 +30,10 @@
     box-sizing: border-box;
     flex: 33%;
     font-size: 1.15em;
+
+    i {
+      color: #C12A2A;
+    }
 
     @media screen and (max-width: 900px) {
       & {
