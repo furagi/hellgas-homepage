@@ -1,7 +1,7 @@
 .header {
   position: fixed;
   width: 100%;
-  background: #000000;
+  background: #FFF;
   line-height: 4em;
   height: 4em;
   z-index: 20;
@@ -62,6 +62,7 @@
     text-align: center;
     text-transform: capitalize;
     font: normal normal normal 2em didot-w01-italic,serif;
+    font-style: italic;
     color: #C1872A;
   }
 }

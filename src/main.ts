@@ -52,13 +52,11 @@ platformBrowserDynamic().bootstrapModule(AppModule);
       $('.feedback__list_folded').removeClass('feedback__list_folded');
       $('.feedback__image').addClass('no-blur');
     });
+    const elem = document.querySelector('.brands');
+    const msnry = new Masonry(elem, {
+      fitWidth: true,
+      itemSelector: '.brands__brand',
+      columnWidth: 300
+    });
   });
-
-  const elem = document.querySelector('.brands');
-  const msnry = new Masonry(elem, {
-    fitWidth: true,
-    itemSelector: '.brands__brand',
-    columnWidth: 300
-  });
-
 })();
